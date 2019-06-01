@@ -13,7 +13,7 @@
         <a :href="github_profile_link">
           <i class="fab txt-c-sec-shade-5 fa-github-square"></i>
         </a>
-        <a :href>
+        <a :href="instagram_profile_link">
           <i class="fab txt-c-sec-shade-5 fa-instagram"></i>
         </a>
       </div>
