@@ -5,29 +5,32 @@ import axios from 'axios';
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-      fb_profile_link: 'https://',
-      remote_docs_path: '/docs/v0.0.1',
-      route_is_loading: true,
-      docs_files_tree:[],
-      page_content:null,
-      current_page: 0,
-      doc_map_obj:[]
-  },
+    state: {
+        fb_profile_link: 'https://www.facebook.com/sulaiman.semiu.79',
+        twitter_profile_link: 'https://twitter.com/sulaiman_wale',
+        instagram_profile_link: 'https://instagram.com/__adewale__',
+        github_profile_link: 'https://github.com/Wharley01/',
+        remote_docs_path: '/docs/v0.0.1',
+        route_is_loading: true,
+        docs_files_tree: [],
+        page_content: null,
+        current_page: 0,
+        doc_map_obj: []
+    },
     mutations: {
-        UPDATE_LOAD_STATE(state,load_state){
+        UPDATE_LOAD_STATE(state, load_state) {
             state.route_is_loading = load_state;
         },
-        SET_DOCS_FILES_TREE(state,data){
+        SET_DOCS_FILES_TREE(state, data) {
             state.docs_files_tree = data;
         },
-        SET_PAGE_CONTENT(state,content){
+        SET_PAGE_CONTENT(state, content) {
             state.page_content = content;
         },
-        SET_CURRENT_PAGE(state,page_index){
+        SET_CURRENT_PAGE(state, page_index) {
             state.current_page = page_index;
         },
-        SET_DOC_MAP(state,map){
+        SET_DOC_MAP(state, map) {
             state.doc_map_obj = map;
         }
     },
