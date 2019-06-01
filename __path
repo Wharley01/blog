@@ -1,0 +1,22 @@
+#!/usr/bin/php
+<?php
+
+
+ini_set(
+    'session.use_cookies',
+    false
+);
+ini_set(
+    'session.cache_limiter',
+    false
+);
+require_once "core/kernel.php";
+
+
+$console = new \Path\Core\CLI\Console($argv);
+
+$console->loadDefaultCLIs();
+$console->loadAllCommands();
+$console->executeCLI();
+//var_dump(get_cli_args(["email@send","name","school"],$argv));
+

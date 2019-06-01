@@ -1,0 +1,25 @@
+node_modules
+LICENSE
+README.md
+docs
+dist
+yarn.lock
+public
+websocket.php
+tests
+sock-test.php
+test-watcher.php
+users.php
+websocket.html
+websocket-test.php
+websocket-test.html
+path/.Storage
+cache_modify.php
+path/struct.json
+path/structure.json
+test.php
+### Sass template
+.sass-cache/
+*.css.map
+*.css
+.idea
