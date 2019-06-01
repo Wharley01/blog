@@ -48,7 +48,7 @@
     </section>
     <div class="p-a-md paging m-t-xsm container" style="max-width: 700px">
       <template v-for="(page,index) in pages">
-        <router-link :class="{'active': !page.navigable}" :to="`?page=${page.page_number}`">
+        <router-link :key="index" :class="{'active': !page.navigable}" :to="`?page=${page.page_number}`">
           <span>{{page.page_number}}</span>
         </router-link>
       </template>
