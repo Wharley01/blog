@@ -1,6 +1,6 @@
 # Blog
 
-This i n example blog built with Path and Vuejs
+This is an example blog built with Path and Vuejs
 
 ## Configure database
 
